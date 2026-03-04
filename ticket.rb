@@ -5,20 +5,20 @@
 class Ticket < Formula
   desc "Markdown-based ticket management CLI"
   homepage "https://github.com/DustinReynoldsPE/ticket"
-  version "2.4.0"
+  version "2.5.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/DustinReynoldsPE/ticket/releases/download/v2.4.0/ticket_2.4.0_darwin_amd64.tar.gz"
-      sha256 "e8b110ad07c4649edf9dde9acb86cd14b8046f9bf75a991205556d3362668082"
+      url "https://github.com/DustinReynoldsPE/ticket/releases/download/v2.5.0/ticket_2.5.0_darwin_amd64.tar.gz"
+      sha256 "b4ebd806987fbfc9f0a057bd0c1a7f97065b9b89d164b0564578e13e74822c8f"
 
       define_method(:install) do
         bin.install "tk"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/DustinReynoldsPE/ticket/releases/download/v2.4.0/ticket_2.4.0_darwin_arm64.tar.gz"
-      sha256 "625ea944f8710bed8567dda3dc05c73298d81fd5e66dfb8bacaca84b922087e6"
+      url "https://github.com/DustinReynoldsPE/ticket/releases/download/v2.5.0/ticket_2.5.0_darwin_arm64.tar.gz"
+      sha256 "39c4e7a0806e00d3c3b72810f5f1e98d24ced78435caf97759e81d9dcef952c3"
 
       define_method(:install) do
         bin.install "tk"
@@ -28,15 +28,15 @@ class Ticket < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/DustinReynoldsPE/ticket/releases/download/v2.4.0/ticket_2.4.0_linux_amd64.tar.gz"
-      sha256 "d642098fdf2ea70c1fe00cfc07e3710f88ba56a1dc22c678fde2383f96a8d3d1"
+      url "https://github.com/DustinReynoldsPE/ticket/releases/download/v2.5.0/ticket_2.5.0_linux_amd64.tar.gz"
+      sha256 "36d1e983cfbb34d8b5a83f69cf20077fd62de97e44f2b6ce407f8c212cf6cbcc"
       define_method(:install) do
         bin.install "tk"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/DustinReynoldsPE/ticket/releases/download/v2.4.0/ticket_2.4.0_linux_arm64.tar.gz"
-      sha256 "dc4bd8c9a410853fe345f46f7d2298b389657350a417f7f70f63ad88e81288ed"
+      url "https://github.com/DustinReynoldsPE/ticket/releases/download/v2.5.0/ticket_2.5.0_linux_arm64.tar.gz"
+      sha256 "6761d1e0487e04ce255af3cae357c9a84bf39e7352fe0be4e75be409b4a3fe7c"
       define_method(:install) do
         bin.install "tk"
       end
